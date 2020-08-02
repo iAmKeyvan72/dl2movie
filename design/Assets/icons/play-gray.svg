@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/play-gray</title>
+    <defs>
+        <path d="M3.84634919,0.19050234 C3.66303562,0.0706895476 3.4389857,0 3.19816198,0 C2.53679537,0 2.00001678,0.53676131 2.00001678,1.19812793 L2.00001678,22.7644306 C1.99883593,22.9824899 2.05994046,23.2101342 2.1905364,23.4126178 C2.54877665,23.9697473 3.28921971,24.1302964 3.84634919,23.7720562 L20.6201401,12.9889048 C20.7567267,12.9026396 20.8825302,12.7804306 20.9795785,12.6294665 C21.3378188,12.072337 21.1760715,11.3318939 20.6201401,10.9736537 L3.84634919,0.19050234 Z M4.39628991,3.39309828 L17.7566144,11.9812793 L4.39628991,20.5694602 L4.39628991,3.39309828 Z" id="path-1"></path>
+    </defs>
+    <g id="icons/play-gray" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Shape" fill="#BFBFBF" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>
