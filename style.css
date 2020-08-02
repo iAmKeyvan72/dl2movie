@@ -513,7 +513,6 @@ a {
 }
 .icon-imdb:before {
   content: "\e907";
-  color: #deb522;
 }
 .icon-like:before {
   content: "\e908";
@@ -591,7 +590,17 @@ header {
 .btn {
   border: none;
   border-radius: 5px;
-  padding: 3px 5px;
+  padding: 8px 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.primary-color {
+  background: #ffcf00;
+  box-shadow: 0 2px 16px 0 rgba(255, 207, 0, 0.5);
+  border-radius: 5px;
+  color: #23374d;
 }
 #menu-trigger {
   background: none;
@@ -619,6 +628,8 @@ header {
 #searchbar .btn {
   background: #fff;
   color: #838383;
+  width: initial;
+  padding: 10px;
 }
 h1 {
   font-size: 18px;
@@ -638,7 +649,7 @@ h3 {
   overflow-x: scroll;
 }
 .mobile-resize-800 .container {
-  width: 800px !important;
+  width: 800px;
 }
 .mobile-resize-800 .container a {
   display: block;
@@ -649,12 +660,188 @@ h3 {
   width: 100%;
   box-shadow: 0 5px 25px rgba(94, 100, 114, 0.13);
 }
-.icon {
-  width: 25px;
-  height: 25px;
-  background-size: cover;
+#filter {
+  padding: 50px 0;
 }
-.icon-filter {
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+aWNvbnMvZmlsdGVyLWdyYXk8L3RpdGxlPgogICAgPGRlZnM+CiAgICAgICAgPHBhdGggZD0iTTIwLjUyOTAyMTMsMy4yODUyMDE1NCBMMTMuMzI5NDI5OCwxMS43OTc0NzM5IEMxMy4xNjkyOTM2LDExLjk4NTkzMzUgMTMuMDcyMzQwNCwxMi4yMzIxMjkyIDEzLjA3MjM0MDQsMTIuNTAxMjAxNSBMMTMuMDcyMzQwNCwyMC4wNDE3NjMyIEwxMC44OTM2MTcsMTguOTUyNDAxNSBMMTAuODkzNjE3LDEyLjUwMTIwMTUgQzEwLjg5NDcwNjQsMTIuMjUzOTE2NCAxMC44MDk3MzYyLDEyLjAwMzM2MzIgMTAuNjM2NTI3NywxMS43OTc0NzM5IEwzLjQzNjkzNjE3LDMuMjg1MjAxNTQgTDIwLjUyOTAyMTMsMy4yODUyMDE1NCBaIE0yMi44NzY1OTU3LDEuMTA2NDY3OCBMMS4wODkzNjE3LDEuMTA2NDY3OCBDMC40ODgwMzQwNDMsMS4xMDY0Njc4IDAsMS41OTQ1MTIxOCAwLDIuMTk1ODM5ODQgQzAsMi40NjQ5MTIxOCAwLjA5Njk1MzE5MTUsMi43MTExMDc5MiAwLjI1NzA4OTM2MiwyLjg5OTU2NzUgTDguNzE0ODkzNjIsMTIuODk5OTA3OSBMOC43MTQ4OTM2MiwxOS42MjU2MjcxIEM4LjcxNDg5MzYyLDIwLjA0OTM4ODggOC45NTY3MzE5MSwyMC40MTc1OTMgOS4zMTczMTA2NCwyMC41OTk1MTY0IEwxMy42NzQ3NTc0LDIyLjc3ODIzOTggQzE0LjIxMjkwMjEsMjMuMDQ3MzEyMiAxNC44Njc2MDg1LDIyLjgyOTQzOTggMTUuMTM2NjgwOSwyMi4yOTEyOTUyIEMxNS4yMTUxMTQ5LDIyLjEzMjI0ODMgMTUuMjUyMTUzMiwyMS45NjMzOTczIDE1LjI1MTA2MzgsMjEuODA0MzUwNSBMMTUuMjUxMDYzOCwxMi44OTk5MDc5IEwyMy43MDg4NjgxLDIuODk5NTY3NSBDMjQuMDk3NzcwMiwyLjQzOTg1Njg2IDI0LjA0MDAzNCwxLjc1MjQ2OTYzIDIzLjU4MDMyMzQsMS4zNjQ2NTY4NiBDMjMuMzc0NDM0LDEuMTkwMzU4OTkgMjMuMTIzODgwOSwxLjEwNTM4ODc3IDIyLjg3NjU5NTcsMS4xMDY0Njc4IFoiIGlkPSJwYXRoLTEiPjwvcGF0aD4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJpY29ucy9maWx0ZXItZ3JheSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPG1hc2sgaWQ9Im1hc2stMiIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8dXNlIGlkPSJTaGFwZSIgZmlsbD0iI0JGQkZCRiIgZmlsbC1ydWxlPSJub256ZXJvIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+);
+.filter-btns {
+  display: flex;
+}
+#filter .btn {
+  background: #ffffff;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  color: #969696;
+  font-size: 12px;
+  margin: 5px;
+  padding: 5px;
+}
+#filter i {
+  margin-left: 2px;
+}
+article.post {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 69%
+  );
+  border-radius: 5px;
+  margin: 20px auto 80px;
+  padding: 0 10px 20px;
+  position: relative;
+}
+article.post header a {
+  color: #23374d;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+.top-quick-post {
+  display: flex;
+}
+.post a.category-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #23374d;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.image-cover {
+  position: relative;
   margin-left: 10px;
+}
+.image-cover img {
+  border-radius: 5px;
+  max-height: 150px;
+}
+.top-quick-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #bfbfbf;
+}
+.post span,
+.post a {
+  color: #23374d;
+  font-weight: bold;
+  font-size: 13px;
+}
+.top-quick-details span {
+  margin-right: 5px;
+}
+#filter .section-title:before {
+  font-family: "icon";
+  content: "\e905";
+  vertical-align: middle;
+}
+.categories-icon:before {
+  font-family: "icon";
+  content: "\e900";
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.country-icon:before {
+  font-family: "icon";
+  content: "\e901";
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.download-icon:before {
+  font-family: "icon";
+  content: "\e903";
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.imdb-icon:before {
+  font-family: "icon";
+  content: "\e907";
+  margin-left: 5px;
+  vertical-align: middle;
+  font-size: 21px;
+}
+.calendar-icon::before {
+  font-family: "icon";
+  content: "\e90e";
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.duration-icon::before {
+  font-family: "icon";
+  content: "\e904";
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.post > div {
+  color: #bfbfbf;
+  margin: 10px auto;
+}
+.detail-summery {
+  background: #f2f9ff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 20px auto;
+}
+.post .btn.primary-color {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -15px;
+  width: 90%;
+  margin: 0 auto;
+}
+#pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 50px;
+}
+#pagination > a {
+  display: inline-block;
+  color: #23374d;
+}
+#pagination ul {
+  display: flex;
+  margin: 0 16px;
+  align-items: center;
+}
+#pagination ul a {
+  border-radius: 4px;
+  background: #f1f2f3;
+  color: #23374d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+#pagination ul a.active {
+  background: #fff;
+  color: #23374d;
+  border: 2px solid #ffcf00;
+}
+
+footer {
+  padding: 10px 20px 50px;
+}
+footer h3 {
+  font-size: 16px;
+  color: #23374d;
+  font-weight: bold;
+  display: block;
+  text-align: right;
+}
+footer ul li a {
+  padding: 10px 0 0 10px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-resize-800 .container {
+    width: initial;
+  }
 }
