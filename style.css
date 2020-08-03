@@ -699,7 +699,7 @@ article.post header a {
 .top-quick-post {
   display: flex;
 }
-.post a.category-badge {
+.image-cover a.category-badge {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -724,7 +724,9 @@ article.post header a {
   color: #bfbfbf;
 }
 .post span,
-.post a {
+.post a,
+#post-description span,
+#post-description a {
   color: #23374d;
   font-weight: bold;
   font-size: 13px;
@@ -774,6 +776,12 @@ article.post header a {
   margin-left: 5px;
   vertical-align: middle;
 }
+.youtube-icon:before {
+  font-family: "icon";
+  content: "\e90f";
+  margin-left: 5px;
+  vertical-align: middle;
+}
 .post > div {
   color: #bfbfbf;
   margin: 10px auto;
@@ -791,6 +799,9 @@ article.post header a {
   bottom: -15px;
   width: 90%;
   margin: 0 auto;
+}
+#post-description {
+  padding: 0 10px;
 }
 #pagination {
   display: flex;
@@ -840,6 +851,11 @@ footer ul li a {
   display: inline-block;
 }
 
+@media screen and (min-width: 700px) {
+  .image-cover img {
+    max-height: 250px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .mobile-resize-800 .container {
     width: initial;
