@@ -6,36 +6,37 @@
     <title>نیکی‌دیلی</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="container">
+  <body>
     <header>
-      <button type="button" id="menu-trigger">دسته‌بندی‌ها</button>
-      <form action="#" id="searchbar">
-        <input
-          type="search"
-          name="search"
-          placeholder="فیلم یا سریال رو جستجو کن"
-        />
-        <button class="btn" type="submit"><i class="icon-search"></i></button>
-      </form>
+      <nav>
+        <button id="menu-trigger" class="menu-icon btn"></button>
+        <form action="#" id="searchbar">
+          <input
+            type="search"
+            name="search"
+            placeholder="فیلم یا سریال رو جستجو کن"
+          />
+          <button class="btn" type="submit"><i class="icon-search"></i></button>
+        </form>
+      </nav>
     </header>
     <main>
-      <ul id="breadcrumbs">
-        <li><a href="#" title="نیکی دیلی">نیکی دیلی</a></li>
-        <li>
-          <a href="#" title="دانلود سریال تاریک Dark فصل سوم با زیرنویس فارسی"
-            >دانلود سریال تاریک Dark فصل سوم با زیرنویس فارسی</a
-          >
-        </li>
-      </ul>
-      <h1>
+      <div id="breadcrumbs">
+        <a href="#" title="نیکی دیلی">نیکی دیلی</a>
+        >
+        <a href="#" title="دانلود سریال تاریک Dark فصل سوم با زیرنویس فارسی"
+          >دانلود سریال تاریک Dark فصل سوم با زیرنویس فارسی</a
+        >
+      </div>
+      <h1 class="post-title">
         <a href="#" title="دانلود سریال تاریک Dark فصل سوم با زیرنویس فارسی"
           >دانلود سریال تاریک Dark فصل سوم با زیرنویس فارسی</a
         >
       </h1>
-      <section
-        class="post-headline"
-        style="background-image: url(./img/fullcover_13.jpg);"
-      >
+      <section class="post-headline">
+        <div class="headline-background">
+          <div style="background-image: url(./img/fullcover_13.jpg);"></div>
+        </div>
         <div class="image-cover">
           <a href="#" title="دانلود فیلم Harriet 2019 هریت با دوبله فارسی">
             <img
@@ -46,33 +47,35 @@
         </div>
         <div class="post-headline-details">
           <ul class="headline-top-details">
-            <li>
+            <li class="categories-icon">
               <a href="#" title="جنایی">جنایی</a>،
               <a href="#" title="درام">درام</a>
             </li>
-            <li>۲۰۱۷</li>
-            <li><a href="#" title="آلمان">آلمان</a></li>
-            <li>۱۴ دقیقه</li>
+            <li class="calendar-icon">۲۰۱۷</li>
+            <li class="country-icon"><a href="#" title="آلمان">آلمان</a></li>
+            <li class="duration-icon">۱۴ دقیقه</li>
           </ul>
           <div>
-            <span class="icon-imdb-fill">۷.۸</span>
+            <div class="imdb-icon-fill">امتیاز <span>۷.۱</span></div>
             <div class="rating"></div>
           </div>
         </div>
       </section>
-      <a
-        href="#download-section"
-        class="download-icon btn primary-color"
-        title="لینک‌های دانلود سریال"
-        >لینک‌های دانلود سریال</a
-      >
-      <a
-        href="#download-section"
-        class="btn border-primary youtube-icon"
-        title="تماشای آنلاین سریال"
-        >تماشای آنلاین سریال</a
-      >
-      <section id="post-description">
+      <section id="quick-download" class="container">
+        <a
+          href="#download-section"
+          class="download-icon btn primary-color"
+          title="لینک‌های دانلود سریال"
+          >لینک‌های دانلود سریال</a
+        >
+        <a
+          href="#download-section"
+          class="btn border-primary youtube-icon"
+          title="تماشای آنلاین سریال"
+          >تماشای آنلاین سریال</a
+        >
+      </section>
+      <section id="post-description" class="container">
         <div>کارگردان <a href="#" title="رضا سبحانی">رضا سبحانی</a></div>
         <div>
           بازیگران
@@ -80,16 +83,237 @@
           <a href="#" title="بهاره رهنما">بهاره رهنما</a>،
           <a href="#" title="لوون هفتوان">لوون هفتوان</a>
         </div>
-        <p class="detail-summery">
-          بری آلن بعد از منفجر شدن آزمایشگاه S.T.A.R بر اثر برخورد ذرات شتاب
-          دهنده به بدنش به کما می رود و بعد از بهوش آمدن متوجه مشود قدرتی خارق
-          العاده به دست آورده است که در سنترال سیتی مثل یک فرشته‌ی نگهبان که
-          قابل رویت نمی‌باشد، حرکت کند…
-          <button type="button">بیشتر</button>
-        </p>
+        <div class="detail-summery">
+          <p id="film-description">
+            بری آلن بعد از منفجر شدن آزمایشگاه S.T.A.R بر اثر برخورد ذرات شتاب
+            دهنده به بدنش به کما می رود و بعد از بهوش آمدن متوجه مشود قدرتی خارق
+            العاده به دست آورده است که در سنترال سیتی مثل یک فرشته‌ی نگهبان که
+            قابل رویت نمی‌باشد، حرکت کند. بری آلن بعد از منفجر شدن آزمایشگاه
+            S.T.A.R بر اثر برخورد ذرات شتاب دهنده به بدنش به کما می رود و بعد از
+            بهوش آمدن متوجه مشود قدرتی خارق العاده به دست آورده است که در سنترال
+            سیتی مثل یک فرشته‌ی نگهبان که قابل رویت نمی‌باشد، حرکت کند. بری آلن
+            بعد از منفجر شدن آزمایشگاه S.T.A.R بر اثر برخورد ذرات شتاب دهنده به
+            بدنش به کما می رود و بعد از بهوش آمدن متوجه مشود قدرتی خارق العاده
+            به دست آورده است که در سنترال سیتی مثل یک فرشته‌ی نگهبان که قابل
+            رویت نمی‌باشد، حرکت کند.
+          </p>
+          <button type="button" id="more-trigger">بیشتر</button>
+        </div>
+      </section>
+      <section id="download-section" class="container">
+        <p class="section-title">لینک‌های دانلود</p>
+        <div class="download-accordion">
+          <button class="accordion-header">فصل ۱ - ۱۰ قسمت</button>
+          <div class="accordion-body">
+            <div class="download-box">
+              <h6>قسمت ۱</h6>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۱۰۸۰p</p>
+                  <p class="file-size">۱.۸۱ گیگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۷۲۰p</p>
+                  <p class="file-size">۱.۰۱ گیگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۴۸۰p</p>
+                  <p class="file-size">۶۰۰ مگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="download-box">
+              <h6>قسمت ۲</h6>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۱۰۸۰p</p>
+                  <p class="file-size">۱.۸۱ گیگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۷۲۰p</p>
+                  <p class="file-size">۱.۰۱ گیگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۴۸۰p</p>
+                  <p class="file-size">۶۰۰ مگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="accordion-header">فصل ۲ - ۱۰ قسمت</button>
+          <div class="accordion-body">
+            <div class="download-box">
+              <h6>قسمت ۱</h6>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۱۰۸۰p</p>
+                  <p class="file-size">۱.۸۱ گیگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۷۲۰p</p>
+                  <p class="file-size">۱.۰۱ گیگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۴۸۰p</p>
+                  <p class="file-size">۶۰۰ مگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="accordion-header">فصل ۳ - ۶ قسمت</button>
+          <div class="accordion-body">
+            <div class="download-box">
+              <h6>قسمت ۱</h6>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۱۰۸۰p</p>
+                  <p class="file-size">۱.۸۱ گیگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۷۲۰p</p>
+                  <p class="file-size">۱.۰۱ گیگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+              <div class="download-quality">
+                <div>
+                  <p class="quality-badge">۴۸۰p</p>
+                  <p class="file-size">۶۰۰ مگ</p>
+                </div>
+                <div>
+                  <a href="#" class="btn primary-color download-icon">دانلود</a>
+                  <button class="btn secondary-color youtube-icon">
+                    پخش آنلاین
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p class="section-title container">دیگران پسندیده‌اند</p>
+      <section id="related-posts" class="mobile-resize-900">
+        <div class="container">
+          <div class="thumb-card">
+            <a href="#" title="کونگ جزیره جمجمه"
+              ><img src="/img/fullcover_5.jpg" alt="کونگ جزیره جمجمه"
+            /></a>
+            <h2><a href="#" title="کونگ جزیره جمجمه">کونگ جزیره جمجمه</a></h2>
+            <div class="imdb-icon">امتیاز<span>۷.۱</span></div>
+          </div>
+          <div class="thumb-card">
+            <a href="#" title="سرکوب"
+              ><img src="/img/fullcover_10.jpg" alt="سرکوب"
+            /></a>
+            <h2><a href="#" title="سرکوب">سرکوب</a></h2>
+            <div class="imdb-icon">امتیاز<span>۸.۵</span></div>
+          </div>
+          <div class="thumb-card">
+            <a href="#" title="هانا"
+              ><img src="/img/fullcover_12.jpg" alt="هانا"
+            /></a>
+            <h2><a href="#" title="هانا">هانا</a></h2>
+            <div class="imdb-icon">امتیاز<span>۶.۴</span></div>
+          </div>
+          <div class="thumb-card">
+            <a href="#" title="کما"
+              ><img src="/img/fullcover_3.jpg" alt="کما"
+            /></a>
+            <h2><a href="#" title="کما">کما</a></h2>
+            <div class="imdb-icon">امتیاز<span>۴.۷</span></div>
+          </div>
+          <div class="thumb-card">
+            <a href="#" title="پادشاه"
+              ><img src="/img/fullcover_8.jpg" alt="پادشاه"
+            /></a>
+            <h2><a href="#" title="پادشاه">پادشاه</a></h2>
+            <div class="imdb-icon">امتیاز<span>۵.۹</span></div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="container">
       <h3><a href="#" title="نیکی دیلی">نیکی دیلی</a></h3>
       <ul>
         <li><a href="#" title="دانلود فیلم">دانلود فیلم</a></li>
@@ -116,6 +340,152 @@
         </li>
       </ul>
     </footer>
+
+    <aside id="nav-links-sidebar">
+      <a href="/" class="btn primary-color" title="نیکی دیلی">نیکی دیلی</a>
+      <div class="mobile-nav-links">
+        <button class="accordion-header">فیلم خارجی</button>
+        <div class="accordion-body">
+          <ul>
+            <li><a href="#" title="اکشن">اکشن</a></li>
+            <li><a href="#" title="ترسناک">ترسناک</a></li>
+            <li><a href="#" title="کمدی">کمدی</a></li>
+            <li><a href="#" title="هندی">هندی</a></li>
+            <li><a href="#" title="تخیلی">تخیلی</a></li>
+            <li><a href="#" title="درام">درام</a></li>
+            <li><a href="#" title="خانوادگی">خانوادگی</a></li>
+            <li><a href="#" title="حادثه‌ای">حادثه‌ای</a></li>
+            <li><a href="#" title="ماجراجویی">ماجراجویی</a></li>
+            <li><a href="#" title="رزمی">رزمی</a></li>
+            <li><a href="#" title="هیجان انگیز">هیجان انگیز</a></li>
+            <li>
+              <a href="#" title="همه فیلم‌های خارجی">همه فیلم‌های خارجی</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion-header">فیلم ایرانی</button>
+        <div class="accordion-body">
+          <ul>
+            <li><a href="#" title="اکشن">اکشن</a></li>
+            <li><a href="#" title="ترسناک">ترسناک</a></li>
+            <li><a href="#" title="کمدی">کمدی</a></li>
+            <li><a href="#" title="هندی">هندی</a></li>
+            <li><a href="#" title="تخیلی">تخیلی</a></li>
+            <li><a href="#" title="درام">درام</a></li>
+            <li><a href="#" title="خانوادگی">خانوادگی</a></li>
+            <li><a href="#" title="حادثه‌ای">حادثه‌ای</a></li>
+            <li><a href="#" title="ماجراجویی">ماجراجویی</a></li>
+            <li><a href="#" title="رزمی">رزمی</a></li>
+            <li><a href="#" title="هیجان انگیز">هیجان انگیز</a></li>
+            <li>
+              <a href="#" title="همه فیلم‌های خارجی">همه فیلم‌های خارجی</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion-header">سریال خارجی</button>
+        <div class="accordion-body">
+          <ul>
+            <li><a href="#" title="اکشن">اکشن</a></li>
+            <li><a href="#" title="ترسناک">ترسناک</a></li>
+            <li><a href="#" title="کمدی">کمدی</a></li>
+            <li><a href="#" title="هندی">هندی</a></li>
+            <li><a href="#" title="تخیلی">تخیلی</a></li>
+            <li><a href="#" title="درام">درام</a></li>
+            <li><a href="#" title="خانوادگی">خانوادگی</a></li>
+            <li><a href="#" title="حادثه‌ای">حادثه‌ای</a></li>
+            <li><a href="#" title="ماجراجویی">ماجراجویی</a></li>
+            <li><a href="#" title="رزمی">رزمی</a></li>
+            <li><a href="#" title="هیجان انگیز">هیجان انگیز</a></li>
+            <li>
+              <a href="#" title="همه فیلم‌های خارجی">همه فیلم‌های خارجی</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion-header">سریال ایرانی</button>
+        <div class="accordion-body">
+          <ul>
+            <li><a href="#" title="اکشن">اکشن</a></li>
+            <li><a href="#" title="ترسناک">ترسناک</a></li>
+            <li><a href="#" title="کمدی">کمدی</a></li>
+            <li><a href="#" title="هندی">هندی</a></li>
+            <li><a href="#" title="تخیلی">تخیلی</a></li>
+            <li><a href="#" title="درام">درام</a></li>
+            <li><a href="#" title="خانوادگی">خانوادگی</a></li>
+            <li><a href="#" title="حادثه‌ای">حادثه‌ای</a></li>
+            <li><a href="#" title="ماجراجویی">ماجراجویی</a></li>
+            <li><a href="#" title="رزمی">رزمی</a></li>
+            <li><a href="#" title="هیجان انگیز">هیجان انگیز</a></li>
+            <li>
+              <a href="#" title="همه فیلم‌های خارجی">همه فیلم‌های خارجی</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion-header">انیمیشن</button>
+        <div class="accordion-body">
+          <ul>
+            <li><a href="#" title="اکشن">اکشن</a></li>
+            <li><a href="#" title="ترسناک">ترسناک</a></li>
+            <li><a href="#" title="کمدی">کمدی</a></li>
+            <li><a href="#" title="هندی">هندی</a></li>
+            <li><a href="#" title="تخیلی">تخیلی</a></li>
+            <li><a href="#" title="درام">درام</a></li>
+            <li><a href="#" title="خانوادگی">خانوادگی</a></li>
+            <li><a href="#" title="حادثه‌ای">حادثه‌ای</a></li>
+            <li><a href="#" title="ماجراجویی">ماجراجویی</a></li>
+            <li><a href="#" title="رزمی">رزمی</a></li>
+            <li><a href="#" title="هیجان انگیز">هیجان انگیز</a></li>
+            <li>
+              <a href="#" title="همه فیلم‌های خارجی">همه فیلم‌های خارجی</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion-header">فیلم دوبله فارسی</button>
+        <div class="accordion-body">
+          <ul>
+            <li><a href="#" title="اکشن">اکشن</a></li>
+            <li><a href="#" title="ترسناک">ترسناک</a></li>
+            <li><a href="#" title="کمدی">کمدی</a></li>
+            <li><a href="#" title="هندی">هندی</a></li>
+            <li><a href="#" title="تخیلی">تخیلی</a></li>
+            <li><a href="#" title="درام">درام</a></li>
+            <li><a href="#" title="خانوادگی">خانوادگی</a></li>
+            <li><a href="#" title="حادثه‌ای">حادثه‌ای</a></li>
+            <li><a href="#" title="ماجراجویی">ماجراجویی</a></li>
+            <li><a href="#" title="رزمی">رزمی</a></li>
+            <li><a href="#" title="هیجان انگیز">هیجان انگیز</a></li>
+            <li>
+              <a href="#" title="همه فیلم‌های خارجی">همه فیلم‌های خارجی</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion-header">سریال دوبله فارسی</button>
+        <div class="accordion-body">
+          <ul>
+            <li><a href="#" title="اکشن">اکشن</a></li>
+            <li><a href="#" title="ترسناک">ترسناک</a></li>
+            <li><a href="#" title="کمدی">کمدی</a></li>
+            <li><a href="#" title="هندی">هندی</a></li>
+            <li><a href="#" title="تخیلی">تخیلی</a></li>
+            <li><a href="#" title="درام">درام</a></li>
+            <li><a href="#" title="خانوادگی">خانوادگی</a></li>
+            <li><a href="#" title="حادثه‌ای">حادثه‌ای</a></li>
+            <li><a href="#" title="ماجراجویی">ماجراجویی</a></li>
+            <li><a href="#" title="رزمی">رزمی</a></li>
+            <li><a href="#" title="هیجان انگیز">هیجان انگیز</a></li>
+            <li>
+              <a href="#" title="همه فیلم‌های خارجی">همه فیلم‌های خارجی</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <aside id="mask"></aside>
 
     <script src="/scripts/script.js"></script>
   </body>
