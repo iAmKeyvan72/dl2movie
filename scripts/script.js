@@ -9,6 +9,11 @@ menuTrigger.addEventListener("click", (event) => {
 maskOverlay.addEventListener("click", (event) => {
   mobileMenu.style.right = "-85%";
   maskOverlay.style.display = "none";
+  if (popup) {
+    for (const pop of popup) {
+      pop.style.top = "-100%";
+    }
+  }
 });
 
 const acc = document.getElementsByClassName("accordion-header");

@@ -81,15 +81,25 @@
       </section>
       <div class="container">
         <div class="grid-tl-7">
-          <section id="filter">
+          <section id="filter-section">
             <p class="section-title">
               فیلتر فیلم‌ها و سریال‌ها بر اساس
             </p>
             <div class="filter-btns">
-              <button type="button" class="btn categories-icon">
+              <button
+                type="button"
+                id="categories-trigger"
+                class="btn categories-icon"
+              >
                 دسته‌بندی
               </button>
-              <button type="button" class="btn country-icon">کشور ساخت</button>
+              <button
+                type="button"
+                id="countries-trigger"
+                class="btn country-icon"
+              >
+                کشور ساخت
+              </button>
               <button type="button" class="btn download-icon">
                 پردانلودترین‌
               </button>
@@ -703,9 +713,303 @@
             <a href="#">آخری</a>
           </div>
         </div>
+        <div class="grid-tl-5">
+          <aside id="categories-popup" class="popup archive-sidebar">
+            <h6>دسته‌بندی مورد نظر را انتخاب کنید</h6>
+            <button type="button" class="close-popup">
+              <i class="icon-x"></i>
+            </button>
+            <ul>
+              <li>
+                <a href="#" title="اجتمایی"
+                  ><h4>اجتمایی</h4>
+                  <span>۸۳۷</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="اکشن"
+                  ><h4>اکشن</h4>
+                  <span>۵۳۶</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="تاریخی"
+                  ><h4>تاریخی</h4>
+                  <span>۹۹</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="ترسناک"
+                  ><h4>ترسناک</h4>
+                  <span>۱۵۳</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="جنایی"
+                  ><h4>جنایی</h4>
+                  <span>۲۳۳</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="جنگ جهانی"
+                  ><h4>جنگ جهانی</h4>
+                  <span>۲۷</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="جنگی"
+                  ><h4>جنگی</h4>
+                  <span>۱۰۷</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="خانوادگی"
+                  ><h4>خانوادگی</h4>
+                  <span>۴۵۵</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="درام"
+                  ><h4>درام</h4>
+                  <span>۷۳۱</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="دفاع مقدس"
+                  ><h4>دفاع مقدس</h4>
+                  <span>۳۵</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="رازآلود"
+                  ><h4>رازآلود</h4>
+                  <span>۱۵۸</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="زندگی نامه"
+                  ><h4>زندگی نامه</h4>
+                  <span>۶۶</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="عاشقانه"
+                  ><h4>عاشقانه</h4>
+                  <span>۲۲۹</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="علمی-تخیلی"
+                  ><h4>علمی-تخیلی</h4>
+                  <span>۲۳۱</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="فانتزی"
+                  ><h4>فانتزی</h4>
+                  <span>۲۶۶</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="کمدی"
+                  ><h4>کمدی</h4>
+                  <span>۶۸۹</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="کودکانه"
+                  ><h4>کودکانه</h4>
+                  <span>۱۵۴</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="ماجراجویی"
+                  ><h4>ماجراجویی</h4>
+                  <span>۵۱۴</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="موزیکال"
+                  ><h4>موزیکال</h4>
+                  <span>۴۸</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="هندی"
+                  ><h4>هندی</h4>
+                  <span>۷۱</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="هیجان انگیز"
+                  ><h4>هیجان انگیز</h4>
+                  <span>۳۳۷</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="ورزشی"
+                  ><h4>ورزشی</h4>
+                  <span>۲۳</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="وسترن"
+                  ><h4>وسترن</h4>
+                  <span>۲۵</span></a
+                >
+              </li>
+            </ul>
+          </aside>
+          <aside id="countries-popup" class="popup archive-sidebar">
+            <h6>کشور تولیدکننده‌ی فیلم را انتخاب کنید</h6>
+            <button type="button" class="close-popup">
+              <i class="icon-x"></i>
+            </button>
+            <ul>
+              <li>
+                <a href="#" title="امریکا"
+                  ><h4>امریکا</h4>
+                  <span>۸۳۷</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="ایران"
+                  ><h4>ایران</h4>
+                  <span>۵۳۶</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="انگلستان"
+                  ><h4>انگلستان</h4>
+                  <span>۹۹</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="فرانسه"
+                  ><h4>فرانسه</h4>
+                  <span>۱۵۳</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="چین"
+                  ><h4>چین</h4>
+                  <span>۲۳۳</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="هند"
+                  ><h4>هند</h4>
+                  <span>۲۷</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="آلمان"
+                  ><h4>آلمان</h4>
+                  <span>۱۰۷</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="آفریقای جنوبی"
+                  ><h4>آفریقای جنوبی</h4>
+                  <span>۴۵۵</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="عراق"
+                  ><h4>عراق</h4>
+                  <span>۷۳۱</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="سوئد"
+                  ><h4>سوئد</h4>
+                  <span>۳۵</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="قطر"
+                  ><h4>قطر</h4>
+                  <span>۱۵۸</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="کانادا"
+                  ><h4>کانادا</h4>
+                  <span>۶۶</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="اسکاتلند"
+                  ><h4>اسکاتلند</h4>
+                  <span>۲۲۹</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="اسپانیا"
+                  ><h4>اسپانیا</h4>
+                  <span>۲۳۱</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="پرتغال"
+                  ><h4>پرتغال</h4>
+                  <span>۲۶۶</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="نروژ"
+                  ><h4>نروژ</h4>
+                  <span>۶۸۹</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="افغانستان"
+                  ><h4>افغانستان</h4>
+                  <span>۱۵۴</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="روسیه"
+                  ><h4>روسیه</h4>
+                  <span>۵۱۴</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="عربستان"
+                  ><h4>عربستان</h4>
+                  <span>۴۸</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="هلند"
+                  ><h4>هلند</h4>
+                  <span>۷۱</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="دانمارک"
+                  ><h4>دانمارک</h4>
+                  <span>۳۳۷</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="ولز"
+                  ><h4>ولز</h4>
+                  <span>۲۳</span></a
+                >
+              </li>
+              <li>
+                <a href="#" title="لهستان"
+                  ><h4>لهستان</h4>
+                  <span>۲۵</span></a
+                >
+              </li>
+            </ul>
+          </aside>
+        </div>
       </div>
     </main>
-    <footer>
+    <footer class="container">
       <h3><a href="#" title="نیکی دیلی">نیکی دیلی</a></h3>
       <ul>
         <li><a href="#" title="دانلود فیلم">دانلود فیلم</a></li>
@@ -879,6 +1183,7 @@
     </aside>
     <aside id="mask"></aside>
 
+    <script src="/scripts/script-archive.js"></script>
     <script src="/scripts/script.js"></script>
   </body>
 </html>
