@@ -9,7 +9,7 @@ menuTrigger.addEventListener("click", (event) => {
 maskOverlay.addEventListener("click", (event) => {
   mobileMenu.style.right = "-85%";
   maskOverlay.style.display = "none";
-  if (popup) {
+  if (typeof popup !== "undefined") {
     for (const pop of popup) {
       pop.style.top = "-100%";
     }
