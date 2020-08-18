@@ -935,6 +935,9 @@ article.post header a {
   margin: 40px auto;
   padding: 0 10px;
 }
+#post-description .btn.thirdry-color {
+  width: 100%;
+}
 #breadcrumbs {
   margin: 10px;
   font-size: 10px;
